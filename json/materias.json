@@ -1,0 +1,12 @@
+[
+    {
+      "materia": "Matemáticas",
+      "profesor": "Juan Pérez",
+      "descripcion": "Curso de matemáticas avanzadas."
+    },
+    {
+      "materia": "Historia",
+      "profesor": "María Gómez",
+      "descripcion": "Exploración de eventos históricos."
+    }
+  ]
