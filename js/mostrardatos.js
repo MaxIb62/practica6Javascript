@@ -1,24 +1,21 @@
-function cargarDatos() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState === 4 && this.status === 200) {
-        var datos = JSON.parse(this.responseText);
-        var informacionDiv = document.getElementById("informacion");
-        var html = "";
+function cargardatos() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "../json/materias.json", true);
+  xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          var materias = JSON.parse(xhr.responseText);
+          var listaMat = document.getElementById("materiasSEM");
 
-        datos.forEach(function(item) {
-          html += "<p><strong>Materia:</strong> " + item.materia + "</p>";
-          html += "<p><strong>Profesor:</strong> " + item.profesor + "</p>";
-          html += "<p><strong>Descripción:</strong> " + item.descripcion + "</p>";
-          html += "<hr>";
-        });
+          materias.forEach(function (materia) {
+              var mat = document.createElement("li");
+              mat.innerHTML = "<strong>materia:</strong> " + materia.materia + "<br>" +
+                                      "<strong>profesor:</strong> " + materia.profesor + "<br>" +
+                                      "<strong>descripción:</strong> " + materia.descripcion + "<br><br>";
 
-        informacionDiv.innerHTML = html;
+              listaMat.appendChild(mat);
+          });
       }
-    };
-    xhttp.open("GET", "materias.json", true);
-    xhttp.send();
-  }
-
-  // Llama a la función para cargar los datos al cargar la página
-  cargarDatos();
+  };
+  xhr.send();
+}
+cargardatos();

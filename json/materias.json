@@ -1,12 +1,27 @@
 [
     {
-      "materia": "Matemáticas",
-      "profesor": "Juan Pérez",
-      "descripcion": "Curso de matemáticas avanzadas."
+      "materia": "simulacion fisica para videojuegos",
+      "profesor": "Ricardo Rodrigues",
+      "descripcion": "estamos aprendiendoa a usar ragdolls"
     },
     {
-      "materia": "Historia",
-      "profesor": "María Gómez",
-      "descripcion": "Exploración de eventos históricos."
+      "materia": "desarrollo web",
+      "profesor": "Jonathan mircha",
+      "descripcion": "estamos aprendiendo a hacer pagnas web con html y javascript"
+    },
+    {
+      "materia": "proyecto semestral VR",
+      "profesor": "rodrigo saco",
+      "descripcion": "estamos desarrollando un videojuego de realidad virtual y estamos aprendiendo las interacciones"
+    },
+    {
+      "materia": "desarrollo de interfaces para Apps",
+      "profesor": "Diana Rodrigues",
+      "descripcion": "estamos aprndiendo a hacer interfaces mejor disñadas y mas limpias con los colores adecuados"
+    },
+    {
+      "materia": "inteligencia artificial",
+      "profesor": "Juan Jose Lopez",
+      "descripcion": "estamos aprendiendo algoitmos como A*"
     }
   ]
